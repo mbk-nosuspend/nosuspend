@@ -7,45 +7,25 @@ if len(sys.argv) < 2:
 	print usage
 	sys.exit(1)
 
-conn = sqlite3.connect('incidents.db')
-c = conn.cursor()
-
 data_file = open(sys.argv[1], 'r')
 
 headers = None
 
-data = {}
+data = []
 
-incidents = []
 for line in data_file:
 	if not headers:
 		headers = True
 
 	fields = line.split("\t")
 
-	print fields
+	incident = {}
 
 	aggregate_level = fields[0]
-	
-	# TODO - parse other fields and insert into database
-	incident = (
-		aggregate_level,
-		None,
-		None,
-		None,
-		None,
-		None,
-		None,
-		None,
-		None,
-		None,
-		None,
-		None,
-		None
-		)
+	incident['aggregate_level'] = aggregate_level
 
-	incidents.append(incident)
-c.executemany('INSERT INTO incidents VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)', incidents)
-c.close()
-conn.commit()
-conn.close()
+	# TODO - parse other fields and add to map
+
+	data.append(incident)
+
+print data
