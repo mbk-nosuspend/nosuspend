@@ -7,20 +7,21 @@
   <title>No Suspend | #MBHHack</title>
   <link rel="stylesheet" href="stylesheets/style.css"/>
   <link rel="stylesheet" href="stylesheets/animate.css"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.0/css/foundation.css"/>
-  <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"/>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+  <link rel="stylesheet" href="stylesheets/foundation-5.5.1.css"/>
+  <link rel="stylesheet" href="stylesheets/ionicons-2.0.1.css"/>
+  <script src="js/modernizr-2.8.3.js"></script>
 </head>
 <body> 
   <div id="fb-root"></div>
-  <script>(function(d, s, id) {
+  <script>
+  (function(d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];
     if (d.getElementById(id)) return;
     js = d.createElement(s); js.id = id;
     js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
     fjs.parentNode.insertBefore(js, fjs);
   }(document, 'script', 'facebook-jssdk'));
-  </script>
+   </script>
   <header class="header row animated fadeIn">
     <div class="large-3 columns">
       <h1><img src="images/Logo.png" alt="No Suspend"></h1>
@@ -225,10 +226,10 @@
     </div>
     <div class="large-8 columns">
       <ul class="large-block-grid-2 text-center">
-        <li><a target="_blank" href="http://readingpartners.org/"><img src="http://laaf.org/wp-content/uploads/2014/08/e4838caf33de16a54640551ad29e6c9c.jpeg" style="max-height:150px"></a></li>
-        <li><a target="_blank" href="http://826valencia.org/"><img src="http://dailygumboot.ca/wp-content/uploads/2010/07/826-Valencia.jpg" style="max-height:150px"></a></li>
-        <li><a target="_blank" href="http://www.reftrans.org/"><img src="https://pbs.twimg.com/profile_images/378800000581866905/7f99c856bf09794af5137e7117303a58_400x400.png" style="max-height:150px"></a></li>
-        <li><a target="_blank" href="http://www.oaklandreads.org/"><img src="https://pbs.twimg.com/profile_images/3372774577/d04e86cd56dd511f01ee6524cf98e882_400x400.png" style="max-height:150px"></a></li>
+        <li><a href="http://readingpartners.org/"><img src="images/readingPartners.jpg" style="max-height:150px"></a></li>
+        <li><a href="http://826valencia.org/"><img src="images/826-Valencia.jpg" style="max-height:150px"></a></li>
+        <li><a href="http://www.reftrans.org/"><img src="images/reftrans.png" style="max-height:150px"></a></li>
+        <li><a href="http://www.oaklandreads.org/"><img src="images/oaklandReads.png" style="max-height:150px"></a></li>
       </ul>
     </div>
   </div>
@@ -330,16 +331,12 @@
   </footer>
 
   <script src="js/jquery-2.1.3.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.0/js/foundation.min.js"></script>
+  <script src="js/foundation-5.5.0.min.js"></script>
   <script>
     $(document).foundation();
     var doc = document.documentElement;
     doc.setAttribute('data-useragent', navigator.userAgent);
-  </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
-  <script>
 
-    // NEED TO UPDATE THIS CODE TO FETCH REMOTE JSON, NOT LOCAL FILE
     function loadJSON(callback) {   
       var xobj = new XMLHttpRequest();
           xobj.overrideMimeType("application/json");
