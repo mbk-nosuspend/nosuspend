@@ -6,13 +6,12 @@ c = conn.cursor()
 
 data = {}
 ethnicities = {}
-for row in c.execute("""select ethnicity, count(*) from incidents 
-	where aggregate_level = 'school_totals' AND CAST(cds as TEXT) LIKE '1612590%' 
-	group by ethnicity;"""):
+for row in c.execute("""SELECT ethnicity, SUM(total) FROM incidents WHERE name = 'Oakland Unified' GROUP BY ethnicity ;"""):
     
 	ethnicities[row[0]] = row[1]
 
 	data['ethnicities'] = ethnicities
 
+
 print json.dumps(data)
-conn.close()	
+conn.close()

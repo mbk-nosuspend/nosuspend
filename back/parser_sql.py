@@ -20,7 +20,7 @@ incidents_sql = []
 
 def parse_int(val):
 	if val == '*':
-		return -1
+		return 0
 	return int(val)
 
 suspensions_by_ethnicity = {}
