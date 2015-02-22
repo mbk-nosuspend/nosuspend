@@ -71,13 +71,43 @@ header.header {
   border-bottom: 2px solid #DDD;
 }
 
-.mission-statement h2 {
-  text-align: center;
+.mission-statement p {
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.notecard p {
+  color: #555;
+}
+
+.notecard {
+  display: inline-block;
+  padding: 1em;
+  border: 1px solid transparent;
+  transition: all .2s ease-in-out;
+}
+
+.notecard:hover {
+  background: rgba(27, 124, 200, 0.025);
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  transform: scale(1.1);
+}
+
+.notecard:hover h4 {
+  color: #2692d0;
 }
 
 .statistics {
   padding: 4em 2em;
   border-bottom: 2px solid #DDD;
+}
+
+.mission-statement .title,
+.statistics .title {
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 2em;
 }
 
 .statistics h4 {
