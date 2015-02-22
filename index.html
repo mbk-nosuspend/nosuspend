@@ -12,6 +12,15 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
 </head>
 <body> 
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+  </script>
   <header class="header row animated fadeIn">
     <div class="large-3 columns">
       <h1><img src="images/Logo.png" alt="No Suspend"></h1>
@@ -132,6 +141,11 @@
           </ul>
         </article>
         <p class="chart-description">This chart shows the suspension rate of Oakland Unified School District in 2014.</p>
+
+        <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://mbk-nosuspend.github.io/nosuspend/" data-text="Let's bring down suspension rates in Oakland schools" data-hashtags="MBKHack,Oakland,suspension">Tweet</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+        <div class="fb-like" data-href="https://www.facebook.com/Suspendnomore" data-layout="standard" data-action="like" data-show-faces="false" data-share="true"></div>
     </div>
   </div>
   <div class="mission-statement row">
