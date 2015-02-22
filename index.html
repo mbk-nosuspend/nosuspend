@@ -270,6 +270,9 @@
         for(var e = 0; e < ethnicities.length; e++) {
           percents.push(Math.round(parseInt(data[ethnicities[e]])/total*100));
         }
+
+        // Increment last percentage to account for rounding
+        percents[ethnicities.length-1] = percents[ethnicities.length-1] + 1;
         console.log(percents);
         var i = 0, c=0;
         for (var perc = 0; perc < percents.length; perc++){
