@@ -1,0 +1,49 @@
+header.header {
+  border-bottom: 2px solid #DDD;
+  margin-bottom: 24px;
+}
+
+.person-size {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+ul.person-grid li {
+  padding-bottom: 0;
+  padding-left: 2.625rem;
+}
+
+.btn {
+  border-radius: 3px;
+  border: 1px solid #CCC;
+  display: inline-block;
+  padding: 0.5em 1em;
+  width: 100%;
+  margin-bottom: 0.5em;
+}
+
+.btn.facebook {
+  border-color: #33488C;
+  color: #33488C;
+}
+
+.btn.facebook:hover {
+  background: #EEF6FD;
+}
+
+.btn.twitter {
+  border-color: #469AEA;
+  color: #469AEA;
+}
+
+.btn.twitter:hover {
+  background: #EEF6FD;
+}
+
+footer p {
+  font-size: 14px;
+}
+
+footer a {
+  font-size: 14px;
+}
