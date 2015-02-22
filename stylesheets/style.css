@@ -3,6 +3,23 @@ header.header {
   margin-bottom: 24px;
 }
 
+header.share-header {
+  background: white;
+  position: fixed;
+  height: 75px;
+  border-bottom: 1px solid #ddd;
+  left: 0;
+  top: 0;
+  right: 0;
+  transform: translateY(-100%);
+  transition: all 0.2s ease-in;
+  z-index: 5;
+}
+
+header.share-header.active {
+  transform: translateY(0);
+}
+
 .tagline p {
   float: right;
   margin-top: 1.5em;
@@ -78,6 +95,15 @@ sup {
   list-style: none;
 }
 
+.social-media.top {
+  margin-top: 0.5em;
+  margin-left: 28em;
+}
+
+.social-media.top li {
+  display: block;
+}
+
 .group-picture img {
   border: 1px solid #ccc;
   margin-bottom: 0.5em;
@@ -130,6 +156,7 @@ sup {
 
 .block,
 .statistics {
+  display: inline-block;
   padding: 4em 2em;
   border-bottom: 2px solid #DDD;
 }
