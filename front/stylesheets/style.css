@@ -3,14 +3,52 @@ header.header {
   margin-bottom: 24px;
 }
 
+.tagline p {
+  float: right;
+  margin-top: 1.5em;
+  color: #2692d0;
+  font-weight: 700;
+}
+
+.person-grid {
+  border-bottom: 2px solid #DDD;
+  padding-bottom: 2em !important;
+}
+
 .person-size {
   font-size: 1.5em;
   text-align: center;
 }
 
-ul.person-grid li {
+.person-grid ul li {
   padding-bottom: 0;
   padding-left: 2.625rem;
+}
+
+.chart-description {
+  color: #777;
+  font-size: 14px;
+  margin-left: 1.5em;
+  margin-top: 2em;
+}
+
+.mission-statement {
+  padding: 4em 2em;
+  border-bottom: 2px solid #DDD;
+}
+
+.mission-statement h2 {
+  text-align: center;
+}
+
+.statistics {
+  padding: 4em 2em;
+}
+
+.statistics h4 {
+  text-align: center;
+  font-size: 5em;
+  font-weight: 300;
 }
 
 .btn {
@@ -20,6 +58,11 @@ ul.person-grid li {
   padding: 0.5em 1em;
   width: 100%;
   margin-bottom: 0.5em;
+  text-align: center;
+}
+
+.btn i {
+  padding-right: 0.5em;
 }
 
 .btn.facebook {

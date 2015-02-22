@@ -6,27 +6,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>NoSuspend</title>
   <link rel="stylesheet" href="stylesheets/style.css"/>
+  <link rel="stylesheet" href="stylesheets/animate.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.0/css/foundation.css"/>
   <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"/>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
 </head>
 <body> 
-  <header class="header row">
+  <header class="header row animated fadeIn">
     <div class="large-3 columns">
       <h1><img src="images/Logo.png" alt="No Suspend"></h1>
     </div>
-    <!-- <div class="large&#45;9 columns"> -->
-    <!--   <ul class="button&#45;group right"> -->
-    <!--     <li><a href="#" class="button">Link 1</a></li> -->
-    <!--     <li><a href="#" class="button">Link 2</a></li> -->
-    <!--     <li><a href="#" class="button">Link 3</a></li> -->
-    <!--     <li><a href="#" class="button">Link 4</a></li> -->
-    <!--   </ul> -->
-    <!-- </div> -->
+    <div class="tagline large-9 columns">
+      <p>Bring down the suspension rates in schools.</p>
+    </div>
   </header>
   <div class="row">
-    <div class="large-12 columns">
-        <ul class="small-block-grid-4 medium-block-grid-5 large-block-grid-10 person-grid">
+    <div class="large-12 columns person-grid">
+        <ul class="small-block-grid-4 medium-block-grid-5 large-block-grid-10 animated fadeIn">
           <li><i class="icon ion-person person-size" id="0"></i></li>
           <li><i class="icon ion-person person-size" id="1"></i></li>
           <li><i class="icon ion-person person-size" id="2"></i></li>
@@ -128,11 +124,12 @@
           <li><i class="icon ion-person person-size" id="98"></i></li>
           <li><i class="icon ion-person person-size" id="99"></i></li>
         </ul>
-      <hr>
+        <p class="chart-description">This chart shows the suspension rate of Oakland Unified School District in 2014.</p>
     </div>
   </div>
-  <div class="row">
-    <div class="large-8 columns">
+  <div class="mission-statement row">
+    <div class="small-8 large-centered columns">
+      <h2>Our Mission</h2>
       <p>
         <strong>No Suspend</strong> uses data to tackle specific problems
         in the Oakland Unified School District around infractions. We hope to
@@ -140,23 +137,27 @@
         demographics.
       </p>
     </div>
+  </div>
+  <div class="statistics row">
     <div class="large-4 columns">
-      <a class="btn twitter" href="http://twitter.com/share?text=Bring down the suspension rates in school&url=http://nosuspend.com/&hashtags=mbkhack,oakland,suspension" target="_blank">Share on Twitter</a>
-      <a class="btn facebook" href="http://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&layout=link&appId=570206162992321" target="_blank">Share on Facebook</a>
+      <h4>1/5</h4>
+      <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
+    </div>
+    <div class="large-4 columns">
+      <h4>20%</h4>
+      <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
+    </div>
+    <div class="large-4 columns">
+      <h4>6x</h4>
+      <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
     </div>
   </div>
   <div class="row">
-    <div class="large-4 columns">
-      <h4>This is a content section.</h4>
-      <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
+    <div class="large-8 columns">
     </div>
     <div class="large-4 columns">
-      <h4>This is a content section.</h4>
-      <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
-    </div>
-    <div class="large-4 columns">
-      <h4>This is a content section.</h4>
-      <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
+      <a class="btn twitter" href="http://twitter.com/share?text=Bring down the suspension rates in school&url=http://nosuspend.com/&hashtags=mbkhack,oakland,suspension" target="_blank"><i class="icon ion-social-twitter"></i> Share on Twitter</a>
+      <a class="btn facebook" href="http://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&layout=link&appId=570206162992321" target="_blank"><i class="icon ion-social-facebook"></i>Share on Facebook</a>
     </div>
   </div>
  
@@ -187,6 +188,11 @@
   </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
   <script>
+
+    // fade in animation
+    $(document).ready(function() {
+    });
+
     // NEED TO UPDATE THIS CODE TO FETCH REMOTE JSON, NOT LOCAL FILE
     function loadJSON(callback) {   
       var xobj = new XMLHttpRequest();
