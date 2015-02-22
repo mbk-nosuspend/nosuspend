@@ -120,6 +120,10 @@ header.header {
   padding: 4em 2em;
 }
 
+.support {
+  padding: 0.0125em 2em;
+}
+
 .btn {
   border-radius: 3px;
   border: 1px solid #CCC;
