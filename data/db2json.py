@@ -1,5 +1,13 @@
+# Reads incidents from SQLite DB, calculates some stats, and outputs in JSON form
+
 import json
 import sqlite3
+import sys
+
+if len(sys.argv) < 2:
+	usage = "Usage: python " + sys.argv[0] + " sqlite.db"
+	print usage
+	sys.exit(1)
 
 conn = sqlite3.connect('incidents.db')
 c = conn.cursor()
