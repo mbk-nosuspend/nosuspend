@@ -12,6 +12,10 @@ header.header {
 
 .person-grid {
   border-bottom: 2px solid #DDD;
+  adding-bottom: 2em !important;
+}
+
+.person-list {
   padding-bottom: 2em !important;
 }
 
@@ -32,6 +36,36 @@ header.header {
   margin-top: 2em;
 }
 
+.key ul li.symbol {
+  display: inline-block;
+  margin-right: 1em;
+  position: relative;
+  color: #777;
+  font-size: 14px;
+  padding-left: 1.5em;
+}
+
+.key ul li:before {
+  position: absolute;
+  left: 0;
+  top: 0.25em;
+  content: "";
+  width: 12px;
+  height: 12px;
+}
+
+.key ul li.african-american:before {
+  background: #211C5C;
+}
+
+.key ul li.latino:before {
+  background: #2692d0;
+}
+
+.key ul li.other:before {
+  background: #DDD;
+}
+
 .mission-statement {
   padding: 4em 2em;
   border-bottom: 2px solid #DDD;
@@ -43,12 +77,17 @@ header.header {
 
 .statistics {
   padding: 4em 2em;
+  border-bottom: 2px solid #DDD;
 }
 
 .statistics h4 {
   text-align: center;
   font-size: 5em;
   font-weight: 300;
+}
+
+.share {
+  padding: 4em 2em;
 }
 
 .btn {
