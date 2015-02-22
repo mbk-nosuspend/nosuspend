@@ -178,7 +178,7 @@
     </div>
   </footer>
 
-  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="js/jquery-2.1.3.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.0/js/foundation.min.js"></script>
   <script>
     $(document).foundation();
@@ -191,7 +191,7 @@
     function loadJSON(callback) {   
       var xobj = new XMLHttpRequest();
           xobj.overrideMimeType("application/json");
-      xobj.open('GET', '../data/test.json', true); // Replace 'my_data' with the path to your file
+      xobj.open('GET', '../data.json', true); // Replace 'my_data' with the path to your file
       xobj.onreadystatechange = function () {
             if (xobj.readyState == 4 && xobj.status == "200") {
               // Required use of an anonymous callback as .open will NOT return a value but simply returns undefined in asynchronous mode
@@ -203,10 +203,28 @@
     $(document).ready(function() {
       loadJSON(function(response) {
         // Parse JSON string into object
-        var data = JSON.parse(response)["ethnicities"],
-            total = 0,
+        var data = JSON.parse(response)["ethnicities"];
+        console.log(data);
+        //data.sort();
+        // data.sort(function(a, b) {return 1;});
+        //   if (a.startsWith('african')) {
+        //     return -1;
+        //   }
+        //   if (b.startsWith('african')) {
+        //     return 1;
+        //   }
+        //   if (a.startsWith('hispanic') && !b.startsWith('african')) {
+        //     return -1;
+        //   }
+        //   if (!a.startsWith('african') && b.startsWith('hispanic')) {
+        //     return 1;
+        //   }
+        //   return 0;
+        // });
+
+        var total = 0,
             percents = [],
-            colors = ["gray","gray","gray","black","brown","gray","gray","gray", "gray", "gray"];
+            colors = ["brown","black","gray","gray","gray","gray","gray","gray", "gray", "gray"];
         // get total number of suspensions
         for(key in data){
           total = total + parseInt(data[key]);
