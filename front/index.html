@@ -204,23 +204,23 @@
       loadJSON(function(response) {
         // Parse JSON string into object
         var data = JSON.parse(response)["ethnicities"];
-        console.log(data);
-        //data.sort();
-        // data.sort(function(a, b) {return 1;});
-        //   if (a.startsWith('african')) {
-        //     return -1;
-        //   }
-        //   if (b.startsWith('african')) {
-        //     return 1;
-        //   }
-        //   if (a.startsWith('hispanic') && !b.startsWith('african')) {
-        //     return -1;
-        //   }
-        //   if (!a.startsWith('african') && b.startsWith('hispanic')) {
-        //     return 1;
-        //   }
-        //   return 0;
-        // });
+        var ethnicities = Object.keys(data);
+        
+        ethnicities.sort(function(a, b) {
+          if (a.indexOf('african') == 0) {
+            return -1;
+          }
+          if (b.indexOf('african') == 0) {
+            return 1;
+          }
+          if (a.indexOf('hispanic') == 0 && b.indexOf('african') == -1) {
+            return -1;
+          }
+          if (a.indexOf('african') == -1 && b.indexOf('hispanic') == 0) {
+            return 1;
+          }
+          return 0;
+        });
 
         var total = 0,
             percents = [],
@@ -230,8 +230,8 @@
           total = total + parseInt(data[key]);
         }
         // normalize suspension data to 100%
-        for(key in data){
-          percents.push(Math.round(parseInt(data[key])/total*100));
+        for(var e = 0; e < ethnicities.length; e++) {
+          percents.push(Math.round(parseInt(data[ethnicities[e]])/total*100));
         }
         console.log(percents);
         var i = 0, c=0;
