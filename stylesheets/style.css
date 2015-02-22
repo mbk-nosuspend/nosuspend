@@ -30,10 +30,14 @@ header.header {
 }
 
 .chart-description {
-  color: #777;
-  font-size: 14px;
-  margin-left: 1.5em;
-  margin-top: 2em;
+  color: #211C5C;
+  font-size: 3em;
+}
+
+.chart-statistic {
+  color: #211C5C;
+  font-size: 2em;
+  opacity: 0.5;
 }
 
 .key ul li.symbol {
@@ -66,8 +70,25 @@ header.header {
   background: #DDD;
 }
 
+sup {
+  font-size: 10px;
+}
+
+.social-media li {
+  list-style: none;
+}
+
+.group-picture img {
+  border: 1px solid #ccc;
+  margin-bottom: 0.5em;
+}
+
+.group-picture figcaption {
+  font-size: 14px;
+}
+
 .mission-statement {
-  padding: 4em 2em;
+  padding: 4em 0;
   border-bottom: 2px solid #DDD;
 }
 
@@ -94,13 +115,32 @@ header.header {
   transform: scale(1.1);
 }
 
+.notecard h4 {
+  color: #211C5C;
+}
+
 .notecard:hover h4 {
   color: #2692d0;
 }
 
+.statistics p,
+.support p {
+  color: #777;
+}
+
+.block,
 .statistics {
   padding: 4em 2em;
   border-bottom: 2px solid #DDD;
+}
+
+.support {
+  padding: 4em 2em;
+  border-bottom: 2px solid #DDD;
+}
+
+.support:last-child {
+  border-color: transparent;
 }
 
 .mission-statement .title,
@@ -116,14 +156,6 @@ header.header {
   font-weight: 300;
 }
 
-.share {
-  padding: 4em 2em;
-}
-
-.support {
-  padding: 0.0125em 2em;
-}
-
 .btn {
   border-radius: 3px;
   border: 1px solid #CCC;
@@ -134,32 +166,25 @@ header.header {
   text-align: center;
 }
 
-.btn i {
-  padding-right: 0.5em;
+.reference {
+  padding-top: 1em;
 }
 
-.btn.facebook {
-  border-color: #33488C;
-  color: #33488C;
+.reference .title {
+  font-size: 12px;
+  font-weight: 700;
 }
 
-.btn.facebook:hover {
-  background: #EEF6FD;
+.reference li {
+  font-size: 12px
 }
 
-.btn.twitter {
-  border-color: #469AEA;
-  color: #469AEA;
+footer {
+  border-top: 2px solid #ccc;
+  padding-top: 1em;
 }
 
-.btn.twitter:hover {
-  background: #EEF6FD;
-}
-
-footer p {
-  font-size: 14px;
-}
-
+footer p,
 footer a {
   font-size: 14px;
 }
